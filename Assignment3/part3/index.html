@@ -24,6 +24,9 @@ body {
     max-width: 1400px;
     font-size: 12px;
     font-family: "PT Serif", serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 4px;
 }
 
 /* Layout */
@@ -31,6 +34,9 @@ body {
 section {
   float: left;
   width: 50%;
+}
+section h2 + p{
+    text-indent: 20px;
 }
 
 aside {
@@ -45,6 +51,11 @@ nav {
 
 footer {
   clear: both;
+}
+
+header {
+    text-align: center;
+
 }
 
 header, section, aside, nav, footer {
@@ -62,6 +73,7 @@ header, footer {
 }
 .h2 {
     font-size: 20px;
+    letter-spacing: .1.3rem;
 }
 
 /* WRITE YOUR CODE BELOW HERE */
@@ -90,6 +102,19 @@ header, footer {
     font-weight: normal;
     font-style: italic;
     font-display: swap;
+}
+a:link { color: #a66;
+    text-decoration: none;
+}
+a:hover{
+color: rgb(206, 122, 122);
+text-decoration: underline;
+}
+a:visited{ color: rgba(170, 102, 102, 0.548);
+
+}
+a:focus{ color: rgb(241, 140, 140);
+    text-decoration: underline;
 }
 
     </style>
