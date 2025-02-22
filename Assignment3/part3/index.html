@@ -76,6 +76,7 @@ header, footer {
     letter-spacing: .1.3rem;
 }
 
+
 /* WRITE YOUR CODE BELOW HERE */
 @font-face {
     font-family: 'PT Serif';
@@ -103,6 +104,16 @@ header, footer {
     font-style: italic;
     font-display: swap;
 }
+a[href^="http"]::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px; 
+    background-image: url('external-link.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    margin-left: 2px;
+}
 a:link { color: #a66;
     text-decoration: underline;
 }
@@ -116,6 +127,45 @@ a:visited{ color: rgba(170, 102, 102, 0.548);
 a:focus{ color: rgb(241, 140, 140);
     text-decoration: none;
     outline-style: none;
+}
+a:active {
+    color: rgba(240, 134, 35, 0.788);
+    text-decoration:solid;
+    outline-color: blanchedalmond;
+}
+
+ul, ol {
+    list-style-type:square;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+ul li, ol li {
+    line-height: normal;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: block;  
+    margin-bottom: 10px; 
+    background-color: rgb(250, 244, 244);  
+    border: 2px solid #a66;
+    border-radius: 8px;
+    padding: 10px 20px;  
+}
+
+nav a {
+    text-decoration: none; 
+    color: #a66;  
+    display: block; 
+    text-align: center;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
 }
 
     </style>
