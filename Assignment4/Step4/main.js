@@ -26,7 +26,6 @@ class Shape {
     this.velX = velX;
     this.velY = velY;
   }
-
 }
 
 class Ball extends Shape {
